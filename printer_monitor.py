@@ -33,12 +33,12 @@ OIDS = {
 }
 
 EMAIL_CONFIG = {
-    "smtp_server": "smtp.gmail.com",
+    "smtp_server": "your.smtp.server",
     "smtp_port": 587,
-    "username": "hpz.scans@gmail.com",
-    "password": "wjwdgiwdjfwyhffb",
-    "from": "hpz.scans@gmail.com",
-    "to": "itsupport@hpz.pt"
+    "username": "your@email.com",
+    "password": "your-app-password",
+    "from": "your@email.com",
+    "to": "recipient1@email.com"
 }
 
 def load_config():
@@ -267,4 +267,5 @@ class PrinterMonitorApp:
         cmd = f'schtasks /Create /SC MONTHLY /D 1 /TN "{task_name}" /TR "{bat_path}" /ST 08:00 /F'
 
         # Executa o comando
+
         os.system(cmd)
