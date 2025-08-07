@@ -13,9 +13,9 @@ A Python GUI application for monitoring Ricoh printers via SNMP with automated e
 - [Features](#-features)
 - [Requirements](#-requirements)
 - [Installation](#-installation)
-- [Configuration](#%EF%B8%8F-configuration)
-- [Usage](#-usage)
-- [Themes](#-themes)
+- [Email](#-Email).
+- [Scheduled](#-Scheduled).
+- [Themes](#-Themes)
 
 ## ✨ Features
 
@@ -49,7 +49,8 @@ Install Dependenciess:
 
 pip install -r requirements.txt
 ```
-## 📧 Email Configuration
+## 📧 Email
+
 ```
 EMAIL_CONFIG = {
   "smtp_server": "smtp.gmail.com",
@@ -63,7 +64,7 @@ EMAIL_CONFIG = {
 Note: For gmail needs to activate double authentication and create a app password..
 
 
-## 📆 Scheduled Task
+## 📆 Scheduled
 The application creates a Windows task that:
 
 Runs monthly on the 1st
