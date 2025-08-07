@@ -16,7 +16,6 @@ A Python GUI application for monitoring Ricoh printers via SNMP with automated e
 - [Configuration](#%EF%B8%8F-configuration)
 - [Usage](#-usage)
 - [Themes](#-themes)
-- [License](#-license)
 
 ## ✨ Features
 
