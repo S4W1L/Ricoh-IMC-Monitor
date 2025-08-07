@@ -44,7 +44,7 @@ Install Dependenciess:
 
 pip install -r requirements.txt
 
-## 📧 Email COnfiguration
+## 📧 Email Configuration
 ```
 EMAIL_CONFIG = {
   "smtp_server": "smtp.gmail.com",
