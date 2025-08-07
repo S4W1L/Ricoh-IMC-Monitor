@@ -9,17 +9,11 @@ A Python application to monitor Ricoh printers via SNMP and send monthly reports
 
 
 ## 📌 Descrição
-O HPZ Ricoh Printer Monitor é uma aplicação desktop desenvolvida em Python que permite monitorizar impressoras Ricoh compatíveis via SNMP. Através de uma interface gráfica intuitiva, é possível:
 
-Adicionar e remover impressoras por IP e comunidade SNMP.
-
-Visualizar informações como modelo, número de série, firmware e níveis de toner.
-
-Gerar relatórios mensais automáticos com contadores de impressão.
-
-Enviar relatórios por e-mail automaticamente.
-
-Agendar tarefas no Windows para execução periódica.
+- **Printer Monitoring**: Collects toner levels, page counts, and device status via SNMP
+- **Automated Reporting**: Sends formatted HTML email reports with printer statistics
+- **Easy Management**: Simple interface to add/remove printers and configure monitoring
+- **Scheduling**: Option to run reports immediately or set up monthly automated reports
 
 ## Features
 
