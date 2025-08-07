@@ -1,5 +1,6 @@
 ![Device](https://img.shields.io/badge/Device-Ricoh%20Printer-red.svg)   
 ![Protocol](https://img.shields.io/badge/Protocol-SNMP-blue.svg)   
+![Python](https://img.shields.io/badge/python-3.6%2B-blue)
 
 # 🖨️ HPZ Ricoh Printer Monitor
 A Python application to monitor Ricoh printers via SNMP and send monthly reports via email.
