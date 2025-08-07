@@ -1,44 +1,55 @@
-![Device](https://img.shields.io/badge/Device-Ricoh%20Printer-red.svg)   
-![Protocol](https://img.shields.io/badge/Protocol-SNMP-blue.svg)   
+![Device](https://img.shields.io/badge/Device-Ricoh%20Printer-red.svg)
+![Protocol](https://img.shields.io/badge/Protocol-SNMP-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.6%2B-blue)
+![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 
 # 🖨️ HPZ Ricoh Printer Monitor
-A Python application to monitor Ricoh printers via SNMP and send monthly reports via email.
 
-<img width="864" height="487" alt="image" src="https://github.com/user-attachments/assets/ef24db3d-9cf2-433f-a635-7d5aa793d49a" />
+A Python GUI application for monitoring Ricoh printers via SNMP with automated email reporting.
 
+<img src="https://github.com/user-attachments/assets/ef24db3d-9cf2-433f-a635-7d5aa793d49a" alt="Application Screenshot">
 
-## 📌 Descrição
+## 📋 Table of Contents
+- [Features](#-features)
+- [Requirements](#-requirements)
+- [Installation](#-installation)
+- [Configuration](#%EF%B8%8F-configuration)
+- [Usage](#-usage)
+- [Themes](#-themes)
+- [License](#-license)
 
-- **Printer Monitoring**: Collects toner levels, page counts, and device status via SNMP
-- **Automated Reporting**: Sends formatted HTML email reports with printer statistics
-- **Easy Management**: Simple interface to add/remove printers and configure monitoring
-- **Scheduling**: Option to run reports immediately or set up monthly automated reports
+## ✨ Features
 
-## Features
+<div align="left">
 
-- 📊 SNMP monitoring of Ricoh printers
-- 🖨️ Collects toner levels, page counters, and status information
-- ✉️ Generates HTML email reports
-- 🖥️ Simple GUI for managing printer configurations
-- ⏱️ Option to run reports immediately or schedule monthly reports
+| Feature Category | Details |
+|-----------------|---------|
+| **Monitoring** | Toner levels, Page counts, Device status |
+| **Reporting** | HTML email reports, Scheduled delivery |
+| **Management** | Add/remove printers, Configure alerts |
+| **Automation** | Monthly reports, Immediate execution |
 
-## Requirements
+</div>
+
+## 📦 Requirements
 
 - Python 3.6+
 - Windows OS (for scheduled tasks)
+- Network access to printers
+- SNMP enabled on devices
 
-## Installation
+## 🚀 Installation
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/S4W1L/Ricoh-IMC-Monitor.git
-   cd hpz-printer-monitor
+1. Clone the repository:
+```bash
+git clone https://github.com/S4W1L/Ricoh-IMC-Monitor.git
+
+cd Ricoh-IMC-Monitor
    
 Install Dependenciess:
 
 pip install -r requirements.txt
-
+```
 ## 📧 Email Configuration
 ```
 EMAIL_CONFIG = {
@@ -68,31 +79,26 @@ schtasks /Create /SC MONTHLY /D 1 /TN "HPZ_Ricoh_Report" /TR "run_printer_monito
 
 Executes the report automatically
 
+## Themes
 
+<div align="left">
 
-### Light Themes:
-```
-cosmo
-flatly
-journal
-litera
-lumen
-minty
-pulse
-sandstone
-united
-yeti
-morph
-simplex
-cerulean
-```
-## Dark Themes:
-```
-darkly
-cyborg
-superhero
-solar
-```
+| Light | Dark |
+|-----------------|---------|
+| cosmo | darkly |
+| flatly | cyborg |
+| journal | superhero |
+| litera | solar |
+| lumen |  |
+| minty |  |
+| pulse |  |
+| sandstone |  |
+| united |  |
+| yeti |  |
+| morph |  |
+| simplex |  |
+| cerulean |  |
 
+</div>
 
 
