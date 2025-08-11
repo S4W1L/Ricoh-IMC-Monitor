@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/python-3.6%2B-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 
-# 🖨️ HPZ Ricoh Printer Monitor
+# 🖨️ Ricoh Printer Monitor
 
 A Python GUI application for monitoring Ricoh printers via SNMP with automated email reporting.
 
@@ -74,7 +74,7 @@ At 8:00 AM
 
 ### Manual task creation:
 ```
-schtasks /Create /SC MONTHLY /D 1 /TN "HPZ_Ricoh_Report" /TR "run_printer_monitor.bat" /ST 08:00 /F
+schtasks /Create /SC MONTHLY /D 1 /TN "Ricoh_Report" /TR "run_printer_monitor.bat" /ST 08:00 /F
 ```
 
 Executes the report automatically
