@@ -90,7 +90,7 @@ def send_email(printers_data):
     """Envia um email com o relatório dos contadores das impressoras."""
     now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M")
     subject = f"Ricoh Contadores - {now}"
-    html = f"<h2>HPZ Ricoh - {now}</h2>"
+    html = f"<h2>Ricoh - {now}</h2>"
 
     for p in printers_data:
         html += f"<h3>{p['Printer Name']} ({p['IP Address']})</h3>"
@@ -146,7 +146,7 @@ def send_email(printers_data):
 class PrinterMonitorApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("HPZ - Ricoh IMC")
+        self.root.title("Ricoh IMC")
         self.root.geometry("540x300")
         self.root.resizable(False, False)
 
@@ -263,9 +263,10 @@ class PrinterMonitorApp:
 
         # Comando para criar ou substituir a tarefa agendada no Windows
         # Agendamento: mensal, dia 1, às 08:00
-        task_name = "HPZ_Ricoh_Report"
+        task_name = "Ricoh_Report"
         cmd = f'schtasks /Create /SC MONTHLY /D 1 /TN "{task_name}" /TR "{bat_path}" /ST 08:00 /F'
 
         # Executa o comando
 
         os.system(cmd)
+
